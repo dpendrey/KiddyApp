@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CD57730-3C30-449E-8061-8D9171B9F5E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KiddyApp</RootNamespace>
+    <AssemblyName>KiddyApp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.pendrey.net.au/wwwroot/myPrograms/KiddyApp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.pendrey.net.au/myPrograms/KiddyApp/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5E883D5810A1A2CB7D70357A7456BA88FEFF70C5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KiddyApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio\Audio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Audio.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Cards\Source1.cs" />
+    <Compile Include="Cards\Source2.cs" />
+    <Compile Include="DisplayCard.cs" />
+    <Compile Include="Images\Source2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Source2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiddy.cs" />
+    <Compile Include="Mode.cs" />
+    <Compile Include="Difficulty.cs" />
+    <Compile Include="CardsAndText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsAndText.Designer.cs">
+      <DependentUpon>CardsAndText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images\Source1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Source1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="Questions\FindColourPicture.cs" />
+    <Compile Include="Questions\FindFromGroup.cs" />
+    <Compile Include="Questions\FindPictureFromWord.cs" />
+    <Compile Include="Questions\FindPictureFromPhrase.cs" />
+    <Compile Include="Questions\FindSizedPicture.cs" />
+    <Compile Include="Questions\PictureWantsPicture.cs" />
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stories\FarmVisit.cs" />
+    <Compile Include="Story.cs" />
+    <Compile Include="StoryTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryTime.Designer.cs">
+      <DependentUpon>StoryTime.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audio\Audio.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Audio.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsAndText.resx">
+      <DependentUpon>CardsAndText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Source1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Source1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Source2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Source2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="KiddyApp_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Audio\ShootingStar.wav" />
+    <None Include="Audio\Error.wav" />
+    <None Include="Images\1-Zebra.png" />
+    <None Include="Images\1-Yacht.png" />
+    <None Include="Images\1-Xylophone.png" />
+    <None Include="Images\1-Whale.png" />
+    <None Include="Images\1-Violin.png" />
+    <None Include="Images\1-Umbrella.png" />
+    <None Include="Images\1-Teddy.png" />
+    <None Include="Images\1-Sun.png" />
+    <None Include="Images\1-Rocket.png" />
+    <None Include="Images\1-Queen.png" />
+    <None Include="Images\1-Pear.png" />
+    <None Include="Images\1-Orange.png" />
+    <None Include="Images\1-Nest.png" />
+    <None Include="Images\1-Moon.png" />
+    <None Include="Images\1-Ladybug.png" />
+    <None Include="Images\1-Kite.png" />
+    <None Include="Images\1-Jar.png" />
+    <None Include="Images\1-Ice Cream.png" />
+    <None Include="Images\1-Heart.png" />
+    <None Include="Images\1-Goat.png" />
+    <None Include="Images\1-Flower.png" />
+    <None Include="Images\1-Egg.png" />
+    <None Include="Images\1-Doll.png" />
+    <None Include="Images\1-Cat.png" />
+    <None Include="Images\1-Butterfly.png" />
+    <None Include="Images\1-Apple.png" />
+    <None Include="Info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Antelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Barn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Camel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Cow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Dinosaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Duck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Eggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Elephant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Flamingo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Giraffe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Goats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Igloo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Insect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Jacket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Jester Hat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Kite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Kitten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Lamb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Moose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Numbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Octopus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Owls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Pumpkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Rocking Horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Umbrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Unicorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Violin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Volcano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Watermellon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Whale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-X Ray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Xylophone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Yarn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Yoyo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Zebra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2-Zipper.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

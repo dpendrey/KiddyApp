@@ -1,0 +1,17 @@
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\bin\Debug\KiddyApp.exe
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\bin\Debug\KiddyApp.pdb
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.Images.Source1.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.Properties.Resources.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.csproj.GenerateResource.Cache
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.exe
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.pdb
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.Audio.Audio.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\bin\Debug\KiddyApp.exe.config
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\bin\Debug\KiddyApp.exe.manifest
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\bin\Debug\KiddyApp.application
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.About.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.exe.manifest
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.application
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.Images.Source2.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.csprojResolveAssemblyReference.cache
+C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.CardsAndText.resources

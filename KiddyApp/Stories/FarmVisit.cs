@@ -13,7 +13,7 @@ namespace KiddyApp.Stories
 
             #region Page 1
             pages[0] = new Page();
-            pages[0].Answer = null;
+            pages[0].CorrectAnswer = null;
             pages[0].Rows = new PageRow[2];
             pages[0].Rows[0] = new PageRowText("The Queen went to visit a farm");
             pages[0].Rows[1] = new PageRowCards(new Card[] { new Cards.Source1.Queen() });
@@ -21,7 +21,7 @@ namespace KiddyApp.Stories
 
             #region Page 2
             pages[1] = new Page();
-            pages[1].Answer = null;
+            pages[1].CorrectAnswer = null;
             pages[1].Rows = new PageRow[4];
             pages[1].Rows[0] = new PageRowText("She saw some animals");
             pages[1].Rows[1] = new PageRowCards(Card.GetRandom(3, Random, null, new string[] { "Animal", "Farm" }));
@@ -30,9 +30,14 @@ namespace KiddyApp.Stories
             #endregion
         }
 
-        public override Page[] Pages
+        public override Page GetCurrentPage()
         {
-            get { return pages; }
+            return pages[CurrentPage];
+        }
+
+        public override void PageFinished(Page Page)
+        {
+            CurrentPage++;
         }
     }
 }

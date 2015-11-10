@@ -109,6 +109,12 @@
       <DependentUpon>Source1.resx</DependentUpon>
     </Compile>
     <Compile Include="Page.cs" />
+    <Compile Include="PageDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageDisplay.Designer.cs">
+      <DependentUpon>PageDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="PageRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,6 +157,9 @@
     <EmbeddedResource Include="Images\Source2.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Source2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageDisplay.resx">
+      <DependentUpon>PageDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

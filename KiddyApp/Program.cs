@@ -14,7 +14,8 @@ namespace KiddyApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CardsAndText());
+            /////Application.Run(new CardsAndText());
+            Application.Run(new PageDisplay());
         }
     }
 }

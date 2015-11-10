@@ -32,3 +32,4 @@ C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.Properties.Resources.
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.csproj.GenerateResource.Cache
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.exe.manifest
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.application
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Debug\KiddyApp.PageDisplay.resources

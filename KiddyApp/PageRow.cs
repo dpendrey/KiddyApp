@@ -14,6 +14,7 @@ namespace KiddyApp
     {
         public string Text;
         public System.Drawing.Font Font = new System.Drawing.Font("Times New Roman", 24, System.Drawing.FontStyle.Bold);
+        public System.Drawing.Brush Brush = System.Drawing.Brushes.Black;
         public PageRowText(string Text) { this.Text = Text; }
 
         public override float RowHeight(System.Drawing.Graphics Graphics)
@@ -23,7 +24,7 @@ namespace KiddyApp
 
         public override void DrawRow(System.Drawing.Graphics Graphics, float TopOffset, float Width)
         {
-
+            Graphics.DrawString(Text, Font, Brush, (Width - Graphics.MeasureString(Text, Font).Width) / 2, TopOffset);
         }
     }
 
@@ -43,6 +44,19 @@ namespace KiddyApp
 
         public override void DrawRow(System.Drawing.Graphics Graphics, float TopOffset, float Width)
         {
+            float totalWidth = 0;
+            for (int i = 0; i < Cards.Length; i++)
+                totalWidth += Cards[i].Image.Width;
+            float curX, rowHeight;
+
+            curX = (Width - totalWidth) / 2;
+            rowHeight = RowHeight(Graphics);
+
+            for (int i = 0; i < Cards.Length; i++)
+            {
+                Graphics.DrawImageUnscaled(Cards[i].Image, (int)curX, (int)(TopOffset + ((rowHeight - Cards[i].Image.Height) / 2)));
+                curX += Cards[i].Image.Width;
+            }
         }
     }
 }

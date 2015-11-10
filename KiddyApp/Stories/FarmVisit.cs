@@ -9,7 +9,7 @@ namespace KiddyApp.Stories
         private Page[] pages;
         public FarmVisit(Random Random)
         {
-            pages = new Page[1];
+            pages = new Page[2];
 
             #region Page 1
             pages[0] = new Page();

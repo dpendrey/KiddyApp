@@ -25,8 +25,8 @@ namespace KiddyApp.Stories
             pages[1].Rows = new PageRow[4];
             pages[1].Rows[0] = new PageRowText("She saw some animals");
             pages[1].Rows[1] = new PageRowCards(Card.GetRandom(3, Random, null, new string[] { "Animal", "Farm" }));
-            pages[1].Rows[0] = new PageRowText("They live in a barn");
-            pages[1].Rows[0] = new PageRowCards(new Card[] { new Cards.Source2.Barn() });
+            pages[1].Rows[2] = new PageRowText("They live in a barn");
+            pages[1].Rows[3] = new PageRowCards(new Card[] { new Cards.Source2.Barn() });
             #endregion
         }
 

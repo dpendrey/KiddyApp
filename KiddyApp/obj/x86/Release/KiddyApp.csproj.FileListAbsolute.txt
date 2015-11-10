@@ -15,3 +15,20 @@ C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Re
 C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.About.resources
 C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Images.Source2.resources
 C:\Users\Dave\documents\visual studio 2010\Projects\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.CardsAndText.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\bin\Release\KiddyApp.exe.config
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\bin\Release\KiddyApp.exe.manifest
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\bin\Release\KiddyApp.application
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\bin\Release\KiddyApp.exe
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\bin\Release\KiddyApp.pdb
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.csprojResolveAssemblyReference.cache
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.About.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Audio.Audio.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.CardsAndText.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Images.Source1.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Images.Source2.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Properties.Resources.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.csproj.GenerateResource.Cache
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.exe.manifest
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.application
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.exe
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.pdb

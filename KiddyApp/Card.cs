@@ -28,6 +28,10 @@ namespace KiddyApp
         internal static void loadCards()
         {
             cards.Clear();
+
+            cards.Add(new Cards.Source0.Book());
+
+
             cards.Add(new Cards.Source1.Apple());
             cards.Add(new Cards.Source1.Butterfly());
             cards.Add(new Cards.Source1.Cat());

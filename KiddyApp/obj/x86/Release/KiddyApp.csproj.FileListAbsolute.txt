@@ -33,3 +33,4 @@ C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.application
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.exe
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.pdb
 C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.PageDisplay.resources
+C:\DPend\KiddyApp\KiddyApp\KiddyApp\obj\x86\Release\KiddyApp.Images.Source0.resources

@@ -86,9 +86,15 @@
       <DependentUpon>Audio.resx</DependentUpon>
     </Compile>
     <Compile Include="Card.cs" />
+    <Compile Include="Cards\Source0.cs" />
     <Compile Include="Cards\Source1.cs" />
     <Compile Include="Cards\Source2.cs" />
     <Compile Include="DisplayCard.cs" />
+    <Compile Include="Images\Source0.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Source0.resx</DependentUpon>
+    </Compile>
     <Compile Include="Images\Source2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,6 +121,8 @@
     <Compile Include="PageDisplay.Designer.cs">
       <DependentUpon>PageDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="PageProvider.cs" />
+    <Compile Include="PageProviders\MainMenu.cs" />
     <Compile Include="PageRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,7 +140,6 @@
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Stories\FarmVisit.cs" />
-    <Compile Include="Story.cs" />
     <Compile Include="StoryTime.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +155,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CardsAndText.resx">
       <DependentUpon>CardsAndText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Source0.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Source0.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\Source1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -377,6 +388,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\2-Zipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\0-Book.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

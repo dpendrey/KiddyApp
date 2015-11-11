@@ -1076,7 +1076,7 @@ namespace KiddyApp.Cards.Source2
 
         public override string[] Groups
         {
-            get { return new string[] {"Music" }; }
+            get { return new string[] { "Music", "Musical Instrument" }; }
         }
 
         public override string[] MainColours
@@ -1211,7 +1211,7 @@ namespace KiddyApp.Cards.Source2
 
         public override string[] Groups
         {
-            get { return new string[] {"Music","Toy" }; }
+            get { return new string[] { "Music", "Toy", "Musical Instrument" }; }
         }
 
         public override string[] MainColours

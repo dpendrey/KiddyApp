@@ -38,6 +38,8 @@
             this.Name = "PageDisplay";
             this.Text = "PageDisplay";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PageDisplay_Paint);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PageDisplay_MouseDown);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PageDisplay_MouseUp);
             this.ResumeLayout(false);
 
         }

@@ -7,8 +7,11 @@ namespace KiddyApp
     public class Page
     {
         public PageRow[] Rows;
-        public Card CorrectAnswer = null;
-        public Card Selected = null;
+
+        public int RowClicked;
+        public int XClicked, YClicked;
+        public DisplayCard CardClicked;
+
         public System.Drawing.Color Background = System.Drawing.Color.White;
         public System.Media.SoundPlayer SoundToPlay = null;
 

@@ -42,17 +42,17 @@ namespace KiddyApp.Questions
             get { return new string[0]; }
         }
 
-        public override double MaxAge
+        public override float MaxAge
         {
             get { return 7; }
         }
 
-        public override double MinAge
+        public override float MinAge
         {
             get { return 4; }
         }
 
-        public override double GetDifficulty(double Age)
+        public override float GetDifficulty(float Age)
         {
             if (Age < 4)
                 return Card.DifficultyModerate;

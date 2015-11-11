@@ -68,8 +68,8 @@ namespace KiddyApp
         {
             float curHeight = 0;
             for (int i = 0; i < DisplayCards.Length; i++)
-                if (curHeight < DisplayCards[i].Card.Image.Height)
-                    curHeight = DisplayCards[i].Card.Image.Height;
+                if (curHeight < DisplayCards[i].Card.Image.Height * DisplayCards[i].Scale)
+                    curHeight =(int)( DisplayCards[i].Card.Image.Height * DisplayCards[i].Scale);
             return curHeight;
         }
 
@@ -77,7 +77,7 @@ namespace KiddyApp
         {
             float totalWidth = 0;
             for (int i = 0; i < DisplayCards.Length; i++)
-                totalWidth += DisplayCards[i].Card.Image.Width;
+                totalWidth += DisplayCards[i].Card.Image.Width * DisplayCards[i].Scale;
             float curX, rowHeight;
 
             curX = (Width - totalWidth) / 2;
@@ -86,9 +86,9 @@ namespace KiddyApp
             for (int i = 0; i < DisplayCards.Length; i++)
             {
                 DisplayCards[i].X = (int)curX;
-                DisplayCards[i].Y=(int)( ((rowHeight - DisplayCards[i].Card.Image.Height) / 2));
-                Graphics.DrawImageUnscaled(DisplayCards[i].Card.Image, DisplayCards[i].X,(int)TopOffset+ DisplayCards[i].Y);
-                curX += DisplayCards[i].Card.Image.Width;
+                DisplayCards[i].Y = (int)(((rowHeight - DisplayCards[i].Card.Image.Height * DisplayCards[i].Scale) / 2));
+                Graphics.DrawImage(DisplayCards[i].Card.Image, DisplayCards[i].X, (int)TopOffset + DisplayCards[i].Y, DisplayCards[i].Card.Image.Width * DisplayCards[i].Scale, DisplayCards[i].Card.Image.Height * DisplayCards[i].Scale);
+                curX +=(int)( DisplayCards[i].Card.Image.Width * DisplayCards[i].Scale);
             }
 
             return (int)rowHeight;

@@ -124,7 +124,7 @@
 * Added a dynamic difficulty preference so the game will try to alternate between challenging and appeasing the player
 
 v1.0.0.8
-* Added many new images (some doubles so there may be bugs for a while)
+* Added many new images (some floats so there may be bugs for a while)
 * Introduced the Farm group to new pictures (not old pictures)
 * Introduced new Cold group
 * Introduced new Home group

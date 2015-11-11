@@ -12,13 +12,13 @@ namespace KiddyApp
         public int[] AnswerCards = new int[] { -1 };
         public bool AnswerOrderImportant = false;
 
-        public abstract double MinAge { get; }
-        public abstract double MaxAge { get; }
-        public abstract double GetDifficulty(double Age);
-        public double GetDifficulty() { return GetDifficulty(Kiddy.CurrentPlayer.Age); }
-        public double GetFinishedDifficulty()
+        public abstract float MinAge { get; }
+        public abstract float MaxAge { get; }
+        public abstract float GetDifficulty(float Age);
+        public float GetDifficulty() { return GetDifficulty(Kiddy.CurrentPlayer.Age); }
+        public float GetFinishedDifficulty()
         {
-            double retVal = GetDifficulty()*GetDifficulty();
+            float retVal = GetDifficulty()*GetDifficulty();
             for (int i = 0; i < AnswerCards.Length; i++)
                 retVal *= Cards[AnswerCards[i]].Card.DifficultyModifier;
             return retVal;
@@ -28,7 +28,7 @@ namespace KiddyApp
         {
             Question[] qs = new Question[10];
 
-            double aimFor = (Kiddy.CurrentPlayer.CurrentLevel + Random.NextDouble() * 4 - 2) / 10;
+            float aimFor =(float) (Kiddy.CurrentPlayer.CurrentLevel + Random.NextDouble() * 4 - 2) / 10;
 
             #region Find 10 random questions to go with next
             for (int i = 0; i < qs.Length; i++)

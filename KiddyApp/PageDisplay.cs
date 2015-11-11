@@ -29,19 +29,23 @@ namespace KiddyApp
 
         private void PageDisplay_Paint(object sender, PaintEventArgs e)
         {
-            // Clear background
-            e.Graphics.Clear(curPage.Background);
-
-            // Determine page height
-            float pageHeight = curPage.PageHeight(e.Graphics);
-            float curY = (ClientSize.Height - pageHeight) / 2;
-
-            // Draw each row in turn
-            for (int i = 0; i < curPage.Rows.Length; i++)
+            try
             {
-                curPage.Rows[i].DrawRow(e.Graphics, curY, ClientSize.Width);
-                curY += curPage.Rows[i].RowHeight(e.Graphics);
+                // Clear background
+                e.Graphics.Clear(curPage.Background);
+
+                // Determine page height
+                float pageHeight = curPage.PageHeight(e.Graphics);
+                float curY = (ClientSize.Height - pageHeight) / 2;
+
+                // Draw each row in turn
+                for (int i = 0; i < curPage.Rows.Length; i++)
+                {
+                    curPage.Rows[i].DrawRow(e.Graphics, curY, ClientSize.Width);
+                    curY += curPage.Rows[i].RowHeight(e.Graphics);
+                }
             }
+            catch (Exception err) { }
         }
 
         private void PageDisplay_MouseDown(object sender, MouseEventArgs e)
@@ -59,32 +63,40 @@ namespace KiddyApp
 
         private void PageDisplay_MouseUp(object sender, MouseEventArgs e)
         {
-            for (int i = 0; i < curPage.Rows.Length; i++)
+            try
             {
-                DisplayCard tmpCard = curPage.Rows[i].Click(e.X, e.Y);
-                if (tmpCard != null)
+                for (int i = 0; i < curPage.Rows.Length; i++)
                 {
-                    if (tmpCard == clicked)
+                    DisplayCard tmpCard = curPage.Rows[i].Click(e.X, e.Y);
+                    if (tmpCard != null)
                     {
-                        curPage.XClicked = e.X;
-                        curPage.YClicked = e.Y;
-                        curPage.RowClicked = i;
-                        curPage.CardClicked = tmpCard;
-                        curProvider.PageClicked(curPage);
-
-                        curPage = curProvider.CurrentPage;
-                        while (curPage == null)
+                        if (tmpCard == clicked)
                         {
-                            curProvider = curProvider.NextProvider;
+                            curPage.XClicked = e.X;
+                            curPage.YClicked = e.Y;
+                            curPage.RowClicked = i;
+                            curPage.CardClicked = tmpCard;
+                            curProvider.PageClicked(curPage);
+
                             curPage = curProvider.CurrentPage;
+                            while (curPage == null)
+                            {
+                                curProvider = curProvider.NextProvider;
+                                curPage = curProvider.CurrentPage;
+                            }
+
+                            if (curPage.SoundToPlay != null)
+                                curPage.SoundToPlay.Play();
+                            Text = "KiddyApp: " + curProvider.Name;
+
+                            Invalidate();
                         }
 
-                        Text = "KiddyApp: " + curProvider.Name;
-
-                        Invalidate();
+                        return;
                     }
                 }
             }
+            catch (Exception err) { }
         }
     }
 }

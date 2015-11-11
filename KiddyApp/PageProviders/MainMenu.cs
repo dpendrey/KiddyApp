@@ -19,7 +19,8 @@ namespace KiddyApp.PageProviders
             curPage.Rows[1] = new PageRowCards(
                 new Card[]
                 {
-                    new Cards.Source0.Book()
+                    new Cards.Source0.Book(),
+                    new Cards.Source0.Question()
                 });
         }
 
@@ -44,6 +45,11 @@ namespace KiddyApp.PageProviders
             {
                 curPage = null;
                 newProvider=new Stories.FarmVisit(new Random());
+            }
+            if (Clicked.CardClicked.Card is Cards.Source0.Question)
+            {
+                curPage = null;
+                newProvider = new Question();
             }
         }
     }

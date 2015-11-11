@@ -33,21 +33,21 @@ namespace KiddyApp.Questions
 
         public FindSizedPicture(Random Random)
         {
-            double[] scales;
+            float[] scales;
 
             // Generate list of cards and scales
             List<Card> tmpList = new List<Card>(Card.GetRandom(3, Random));
             tmpList.Add(tmpList[0]);
             tmpList.Add(tmpList[1]);
             tmpList.Add(tmpList[2]);
-            List<double> tmpScales = new List<double>();
+            List<float> tmpScales = new List<float>();
             tmpScales.Add(1);
             tmpScales.Add(1);
             tmpScales.Add(1);
             tmpScales.Add(0.5f);
             tmpScales.Add(0.5f);
             tmpScales.Add(0.5f);
-            scales = new double[6];
+            scales = new float[6];
 
             // Randomly shuffle into display items
             List<Card> finalCards = new List<Card>();
@@ -93,17 +93,17 @@ namespace KiddyApp.Questions
             get { return new string[0]; }
         }
 
-        public override double MaxAge
+        public override float MaxAge
         {
             get { return 7; }
         }
 
-        public override double MinAge
+        public override float MinAge
         {
             get { return 4; }
         }
 
-        public override double GetDifficulty(double Age)
+        public override float GetDifficulty(float Age)
         {
             if (Age < 4)
                 return Card.DifficultyHard;

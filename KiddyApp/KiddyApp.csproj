@@ -123,6 +123,7 @@
     </Compile>
     <Compile Include="PageProvider.cs" />
     <Compile Include="PageProviders\MainMenu.cs" />
+    <Compile Include="PageProviders\Question.cs" />
     <Compile Include="PageRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -391,6 +392,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\0-Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\0-Question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

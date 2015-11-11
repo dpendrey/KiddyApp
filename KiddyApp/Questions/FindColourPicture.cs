@@ -44,17 +44,17 @@ namespace KiddyApp.Questions
             get { return new string[0]; }
         }
 
-        public override double MaxAge
+        public override float MaxAge
         {
             get { return 0; }
         }
 
-        public override double MinAge
+        public override float MinAge
         {
             get { return 0; }
         }
 
-        public override double GetAgeMatrix(double Age, Difficulty Difficulty)
+        public override float GetAgeMatrix(float Age, Difficulty Difficulty)
         {
             return 0;
         }

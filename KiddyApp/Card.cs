@@ -6,12 +6,12 @@ namespace KiddyApp
 {
     public abstract class Card
     {
-        public const double DifficultyStandard = 1,
-            DifficultyBitHigh = 1.2,
-            DifficultyModerate = 1.5,
+        public const float DifficultyStandard = 1,
+            DifficultyBitHigh = 1.2f,
+            DifficultyModerate = 1.5f,
             DifficultyHard = 2,
-            DifficulySomewhatEasy=0.8,
-            DifficultyEasy = 0.5;
+            DifficulySomewhatEasy=0.8f,
+            DifficultyEasy = 0.5f;
         public abstract string Text { get; }
 
         public abstract System.Drawing.Image Image { get; }
@@ -20,7 +20,7 @@ namespace KiddyApp
 
         public abstract string[] MainColours { get; }
 
-        public abstract double DifficultyModifier { get; }
+        public abstract float DifficultyModifier { get; }
 
 
         static List<Card> cards = new List<Card>();
@@ -30,6 +30,7 @@ namespace KiddyApp
             cards.Clear();
 
             cards.Add(new Cards.Source0.Book());
+            cards.Add(new Cards.Source0.Question());
 
 
             cards.Add(new Cards.Source1.Apple());

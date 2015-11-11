@@ -11,7 +11,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Antelope"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyHard; }
         }
@@ -38,7 +38,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Apple"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy; }
         }
@@ -65,7 +65,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Barn"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy; }
         }
@@ -92,7 +92,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Bird"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy; }
         }
@@ -119,7 +119,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Camel"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy ; }
         }
@@ -146,7 +146,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Cow"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyEasy; }
         }
@@ -173,7 +173,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Dinosaur"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyModerate; }
         }
@@ -200,7 +200,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Duck"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -227,7 +227,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Eggs"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -254,7 +254,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Elephant"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -281,7 +281,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Flamingo"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -308,7 +308,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Giraffe"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -335,7 +335,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Goats"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -362,7 +362,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Horse"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -389,7 +389,7 @@ namespace KiddyApp.Cards.Source2
             get { return "House"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -416,7 +416,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Igloo"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -443,7 +443,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Insect"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -470,7 +470,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Jacket"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -497,7 +497,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Jester Hat"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyHard; }
         }
@@ -524,7 +524,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Kite"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -551,7 +551,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Kitten"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy; }
         }
@@ -578,7 +578,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Lamb"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy; }
         }
@@ -605,7 +605,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Lion"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -632,7 +632,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Monkey"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -659,7 +659,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Moose"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -686,7 +686,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Notes"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyModerate; }
         }
@@ -713,7 +713,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Numbers"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -740,7 +740,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Octopus"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -767,7 +767,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Owls"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -794,7 +794,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Paint"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -821,7 +821,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Pumpkin"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -848,7 +848,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Rocket"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -875,7 +875,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Rocking Horse"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -902,7 +902,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Snake"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -929,7 +929,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Stars"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy ; }
         }
@@ -956,7 +956,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Tree"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficulySomewhatEasy ; }
         }
@@ -983,7 +983,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Turtle"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1010,7 +1010,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Umbrella"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1037,7 +1037,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Unicorn"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1064,7 +1064,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Violin"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1091,7 +1091,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Volcano"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyModerate; }
         }
@@ -1118,7 +1118,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Watermellon"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -1145,7 +1145,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Whale"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1172,7 +1172,7 @@ namespace KiddyApp.Cards.Source2
             get { return "X Ray"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyHard; }
         }
@@ -1199,7 +1199,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Xylophone"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyModerate; }
         }
@@ -1226,7 +1226,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Yarn"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1253,7 +1253,7 @@ namespace KiddyApp.Cards.Source2
             get { return "YoYo"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
@@ -1280,7 +1280,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Zebra"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyBitHigh; }
         }
@@ -1307,7 +1307,7 @@ namespace KiddyApp.Cards.Source2
             get { return "Zipper"; }
         }
 
-        public override double DifficultyModifier
+        public override float DifficultyModifier
         {
             get { return Card.DifficultyStandard; }
         }
